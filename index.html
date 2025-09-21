@@ -1,158 +1,94 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
+<!DOCTYPE html>
+<html lang="fa">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>سایت حرفه‌ای شما — قالب آماده</title>
-  <meta name="description" content="قالب آماده سایت شرکتی/شخصی — قابل ویرایش و آپلود روی هر هاست یا GitHub Pages" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نمونه کارها</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--text:#e6eef6}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#081024 0%, #071622 100%);color:var(--text);line-height:1.5}
-    .container{max-width:1100px;margin:32px auto;padding:0 20px}
-    header{display:flex;align-items:center;justify-content:space-between}
-    .logo{display:flex;gap:10px;align-items:center}
-    .logo .mark{width:44px;height:44px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;color:#022}
-    nav a{color:var(--muted);margin:0 8px;text-decoration:none;font-weight:600}
-    .hero{display:grid;grid-template-columns:1fr;gap:20px;padding:40px 0;align-items:center}
-    @media(min-width:820px){.hero{grid-template-columns:1fr 420px}}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
-    h1{font-size:28px;margin:0 0 8px}
-    p.lead{color:var(--muted);margin:0 0 16px}
-    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#002;font-weight:700;text-decoration:none}
-    .features{display:grid;grid-template-columns:repeat(1,1fr);gap:14px;margin-top:20px}
-    @media(min-width:820px){.features{grid-template-columns:repeat(2,1fr)}}
-    .feature{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
-    .portfolio{display:grid;grid-template-columns:repeat(1,1fr);gap:12px;margin-top:18px}
-    @media(min-width:640px){.portfolio{grid-template-columns:repeat(2,1fr)}}
-    .proj{height:160px;border-radius:10px;overflow:hidden;position:relative}
-    .proj img{width:100%;height:100%;object-fit:cover;border-radius:10px}
-    .proj span{position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.5);padding:4px 8px;border-radius:6px;font-size:13px;color:#fff}
-    footer{color:var(--muted);margin:40px 0 100px;text-align:center}
-    .contact-grid{display:grid;gap:12px}
-    @media(min-width:640px){.contact-grid{grid-template-columns:1fr 320px}}
-    form input,form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);}
-    .small{font-size:13px;color:var(--muted)}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted);font-weight:700}
-    .price{display:flex;gap:10px;align-items:center}
-    .price .num{font-size:20px;font-weight:800;color:var(--accent)}
+    body {
+      background-color: #0d1117;
+      color: #fff;
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+    }
+    h1 {
+      text-align: right;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #161b22;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .tag {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #000;
+      border-radius: 5px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <div class="mark">ش</div>
-        <div>
-          <div style="font-weight:800">نام شما / برند</div>
-          <div class="small">طراحی وب — توسعه وب اپلیکیشن</div>
-        </div>
+  <h1>نمونه کار</h1>
+  <div class="grid">
+    <div class="card">
+      <img src="images/campaign-creators-OGOWDVlBMsC-unsplash.jpg" alt="نمونه ۱">
+      <div class="card-content">
+        <h3>نمونه ۱</h3>
+        <span class="tag">سایت فروشگاهی</span>
       </div>
-      <nav>
-        <a href="#services">خدمات</a>
-        <a href="#portfolio">نمونه‌کار</a>
-        <a href="#pricing">قیمت</a>
-        <a href="#contact">تماس</a>
-      </nav>
-    </header>
+    </div>
 
-    <section class="hero" style="margin-top:28px">
-      <div class="card">
-        <h1>سایت حرفه‌ای، توسعه سریع، پرداخت امن</h1>
-        <p class="lead">من برای شما یک سایت واکنش‌گرا طراحی می‌کنم؛ شامل پنل مدیریت ساده، اتصال پرداخت، سئو پایه و ریسپانسیو برای موبایل.</p>
-        <a class="cta" href="#contact">شروع کن — با هم صحبت کنیم</a>
-
-        <div class="features">
-          <div class="feature"><div style="font-weight:800">طراحی ریسپانسیو</div><div class="small">نمایش عالی روی موبایل و دسکتاپ</div></div>
-          <div class="feature"><div style="font-weight:800">اتصال درگاه</div><div class="small">راهنمای اتصال درگاه‌های ایرانی و بین‌المللی</div></div>
-          <div class="feature"><div style="font-weight:800">سئو پایه</div><div class="small">تنظیم متاها، سرعت اولیه، sitemap</div></div>
-          <div class="feature"><div style="font-weight:800">پشتیبانی و آموزش</div><div class="small">راهنمای ویدئویی برای مدیریت محتوا</div></div>
-        </div>
+    <div class="card">
+      <img src="images/carriza-maiquez-RTdvy9izXvw-unsplash.jpg" alt="نمونه ۲">
+      <div class="card-content">
+        <h3>نمونه ۲</h3>
+        <span class="tag">پنل مدیریت</span>
       </div>
+    </div>
 
-      <aside>
-        <div class="card">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-            <div style="font-weight:800">پکیج پیشنهادی</div>
-            <div class="badge">پایه</div>
-          </div>
-          <div class="price" style="margin-bottom:10px"><div class="num">تماس بگیر</div><div class="small">قیمت متناسب با نیاز شما</div></div>
-          <div class="small">شامل: صفحه اصلی، درباره ما، خدمات، تماس با ما، فرم ساده، سرعت اولیه و امنیت پایه.</div>
-        </div>
-      </aside>
-    </section>
-
-    <section id="services" style="margin-top:20px">
-      <h2 style="margin-bottom:8px">خدمات من</h2>
-      <div class="card">
-        <ul style="margin:0;padding:0 10px;line-height:2">
-          <li>طراحی سایت شرکتی و شخصی</li>
-          <li>فروشگاه اینترنتی با درگاه پرداخت</li>
-          <li>راه‌اندازی وردپرس با قالب اختصاصی</li>
-          <li>پیاده‌سازی پنل ادمین ساده (Python/Flask یا Node.js)</li>
-          <li>بهینه‌سازی سرعت و سئو پایه</li>
-        </ul>
+    <div class="card">
+      <img src="images/solidpixels-iq2RzBMj-Wg-unsplash.jpg" alt="نمونه ۳">
+      <div class="card-content">
+        <h3>نمونه ۳</h3>
+        <span class="tag">سایت شرکتی</span>
       </div>
-    </section>
+    </div>
 
-    <section id="portfolio" style="margin-top:20px">
-      <h2 style="margin-bottom:8px">نمونه‌کار</h2>
-      <div class="portfolio">
-        <div class="proj card"><img src="images/sample1.jpg" alt="نمونه ۱"><span>سایت فروشگاهی</span></div>
-        <div class="proj card"><img src="images/sample2.jpg" alt="نمونه ۲"><span>پنل مدیریت</span></div>
-        <div class="proj card"><img src="images/sample3.jpg" alt="نمونه ۳"><span>سایت شرکتی</span></div>
-        <div class="proj card"><img src="images/sample4.jpg" alt="نمونه ۴"><span>وبلاگ شخصی</span></div>
+    <div class="card">
+      <img src="images/tracy-adams-rA5MU4pXnWE-unsplash.jpg" alt="نمونه ۴">
+      <div class="card-content">
+        <h3>نمونه ۴</h3>
+        <span class="tag">وبلاگ شخصی</span>
       </div>
-    </section>
-
-    <section id="pricing" style="margin-top:20px">
-      <h2 style="margin-bottom:8px">پکیج‌ها (نمونه)</h2>
-      <div class="card">
-        <div style="display:grid;gap:12px">
-          <div style="padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)">
-            <div style="display:flex;justify-content:space-between"><strong>پایه</strong><span class="small">مناسب کسب‌وکار کوچک</span></div>
-            <div class="small">صفحه اصلی + فرم تماس + سئو پایه</div>
-          </div>
-          <div style="padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)">
-            <div style="display:flex;justify-content:space-between"><strong>استاندارد</strong><span class="small">شامل فروشگاه کوچک</span></div>
-            <div class="small">صفحات محصول، سبد خرید، اتصال درگاه</div>
-          </div>
-          <div style="padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)">
-            <div style="display:flex;justify-content:space-between"><strong>پرو</strong><span class="small">سفارشی‌سازی کامل</span></div>
-            <div class="small">پنل مدیریت اختصاصی، ادغام API، اتوماسیون</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" style="margin-top:20px">
-      <h2 style="margin-bottom:8px">تماس و سفارش</h2>
-      <div class="card contact-grid">
-        <div>
-          <p class="small">برای سفارش اطلاعات زیر کافیست (یا بفرست): نام کسب‌وکار، توضیح کوتاه، لوگو/عکس‌ها، دامنه/هاست (در صورت وجود).</p>
-          <ul class="small" style="margin-top:10px">
-            <li>تحویل: فایل HTML/CSS/JS + آموزش آپلود و ویرایش</li>
-            <li>نسخه وردپرس: بسته نصبی + آموزش اتصال درگاه</li>
-            <li>نسخه پیشرفته: کد بک‌اند همراه با Dockerfile (قابل اجرا در سرور)</li>
-          </ul>
-        </div>
-
-        <div>
-          <form onsubmit="alert('این فرم نمونه است؛ برای سفارش در چت پیام بفرستید.');return false;">
-            <input type="text" placeholder="نام شما / کسب‌وکار" />
-            <input type="email" placeholder="ایمیل برای تماس" />
-            <textarea rows="4" placeholder="توضیح کوتاه یا لینک نمونه کار که دوست داری"></textarea>
-            <div style="display:flex;gap:8px;margin-top:8px">
-              <button class="cta" type="submit">ارسال سفارش</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      ساخته شده با ❤️ — می‌تونم این قالب رو برای شما کاملاً شخصی‌سازی کنم. برای ادغام درگاه یا ساخت پنل ادمین، فقط بگو چه نیازهایی داری.
-    </footer>
+    </div>
   </div>
 </body>
 </html>
